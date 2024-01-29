@@ -1,50 +1,24 @@
-/* Small devices (landscape phones, 576px and up) */
-@media only screen and (min-width: 576px) and (max-width:767.98px) { 
-    body {
-        width: auto;
-    }
-}
-/* Medium devices (tablets, 768px and up) */
-@media only screen and (min-width: 768px) and (max-width: 991.98px) {
-   body {
-        width: auto;
-    }
-}
-/* Large devices (desktops, 992px and up) */
-@media only screen and (min-width: 992px) and (max-width:1199.98px) {
-   body {
-        width: auto;
-    }
-}
-/* X-Large devices (large desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) and (max-width:1399.98px) {
-   body {
-        width: auto;
-    }
-}
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media only screen and (min-width: 1400px) {
-   body {
-        width: auto;
-    }
+/*reset*/
+html {
+    height: 100%;
 }
 
-/*reset*/
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: black;
     margin: 0px;
     padding: 0px;
-    width: auto;
-    background-color: rgba(0, 81, 255, 0.048);
     display: flex;
     flex-flow: column wrap;
+    max-width: 100%;
+    min-height: 100%;
+    justify-content: space-between;
 }
 
-/*contacto*/
 main {
     font-family: 'Asap Condensed', sans-serif;
     font-size: 1rem;
+    height: fit-content;
 }
 
 /*header*/
@@ -52,19 +26,19 @@ li a {
     color: white;
     font-size: 1rem;
 }
+
 header {
     background: url(../assets/background.png) no-repeat;
-    background-position: start;
     background-size: cover;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     height: fit-content;
 }
+
 header img {
     height: 110px;
 }
-
 
 .nopuntos {
     display: flex;
@@ -87,8 +61,8 @@ header img {
 }
 
 .navicon:hover {
-        color: burlywood;
-        font-weight: bold;
+    color: burlywood;
+    font-weight: bold;
 }
 
 .redes {
@@ -97,17 +71,20 @@ header img {
     flex-wrap: wrap;
     flex-direction: column;
 }
+
 .redes ul {
     flex-flow: column wrap;
     align-items: end;
     justify-content: center;
 }
+
 .redes li {
     display: flex;
     flex-direction: row;
     list-style: none;
     align-items: center;
 }
+
 .redes li a {
     color: whitesmoke;
     text-decoration: none;
@@ -122,13 +99,15 @@ header img {
     list-style: none;
     align-items: center;
 }
+
 .redes2 a {
     text-decoration: none;
     font-size: 1rem;
     color: whitesmoke;
 }
+
 .imgred {
-    height: 30px;
+    max-height: 30px;
     border-radius: 10px;
     margin-right: 5px;
 }
@@ -142,10 +121,12 @@ header img {
     color: burlywood;
     margin: 25px;
 }
+
 .titt {
     grid-row: 2;
     grid-column: 2;
 }
+
 .mainst {
     font-family: 'Cinzel', serif;
     text-align: center;
@@ -155,10 +136,12 @@ header img {
 
 .nosotros {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: stretch;
-    padding: 5px;
-}   
+    padding: 20px;
+}
+
 .nosp {
     display: flex;
     flex-wrap: wrap;
@@ -167,13 +150,22 @@ header img {
 }
 
 /*destacados*/
+.carousel {
+    max-width: 70%;
+    max-height: 500px;
+}
+
 .car-tm {
     max-height: 500px;
 }
+
 .car-tm img {
     width: 100%;
 }
 
+.carousel-caption {
+    height: fit-content;
+}
 
 /*articulos*/
 .card {
@@ -186,7 +178,9 @@ header img {
 .inicio {
     display: flex;
     justify-content: flex-end;
-    margin: 30px;
+    position: relative;
+    margin: 20px;
+    right: 20px;
 }
 
 .inicio a {
@@ -207,15 +201,12 @@ footer {
     background-color: #0E1338;
     color: lightgray;
     height: auto;
+    position: relative;
+    bottom: 0;
+    margin-top: 20px;
 }
 
 /*Productos*/
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-}
-
 .prodmain {
     grid-column: 1/4;
     grid-row: 2;
@@ -226,9 +217,11 @@ footer {
 }
 
 .prods {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,minmax(350px,1fr)
+        );
+    justify-items: center;
 }
 
 .latas img {
@@ -260,22 +253,26 @@ footer {
     font-size: 1.1rem;
     text-align: center;
 }
+
 .disciplinas {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-flow: row wrap;
 }
+
 .disciplinas h3 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 2em;
     font-weight: 500;
     text-align: start;
 }
+
 .disciplinas article p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1rem;
     text-align: start;
 }
+
 .disciplinas article iframe {
     max-height: 450px;
 }
@@ -290,7 +287,9 @@ main h1 {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    width: 100%;
 }
+
 .atleta {
     display: flex;
     flex-flow: column wrap;
@@ -301,61 +300,208 @@ main h1 {
     height: fit-content;
     margin-bottom: 20px;
 }
+
 .atleta img {
     width: 100%;
     border-radius: 10px;
 }
-.atltxt {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 
 /*Clips*/
-#mclip {
-    display: flex;
-    flex-wrap: wrap;
+.mclip {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,550px);
+    justify-content: center;
+    grid-auto-rows: 400px;
+    height: fit-content;
 }
 
 .clips {
-    width: auto;
+    max-width: 500px;
     display: flex;
     flex-flow: column wrap;
-    align-items: flex-start;
-    margin: auto;
+    align-items: center;
 }
 
 .clips iframe {
     margin: 10px;
-    width: 550px;
-    height: 350px;
+    width: 100%;
+    height: 300px;
 }
 
 /*Fundacion*/
-#mfund p {
-    margin: 50px;
+.mfund {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
     font-size: 1rem;
+    margin: auto;
+}
+
+.mfund p {
+    margin: 0px 40px
 }
 
 /*contacto*/
-#mcont {
-    display: block;
-    margin: 100px;
-    font-size: 1rem;
+.contacto {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 20px;
+    justify-content: center;
 }
 
-#mcont input {
-    width: fit-content;
-    font-size: 1rem;
-}
-
-#mcont textarea {
-    font-size: 1.2rem;
-}
-
-#mss {
-    margin-top: 60px;
+.inputs {
+    margin-bottom: 20px;
+    margin-right: 10px;
 }
 
 .container-fluid {
     display: flex;
     flex-flow: row wrap;
+    align-items: center;
+}
+
+.grid {
+    width: 100%;
+}
+
+/*arreglos fundacion*/
+.footfund {
+    position: static;
+    bottom: 0px;
+}
+
+.iniciofund {
+    position: fixed;
+    bottom: 105px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+    right: 20px;
+}
+
+.iniciofund a {
+    color: dimgray;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+/* Extra small devices (phones) */
+@media screen and (max-width: 550px) {
+    body {
+        max-width: 100%;
+    }
+
+    .redes {
+        display: none;
+    }
+
+    .navicon {
+        font-size: 1.2rem;
+    }
+
+    .container-fluid {
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .nosotros {
+        flex-direction: column;
+    }
+
+    .nosp {
+        width: 100%;
+        text-align: center;
+    }
+
+    .mclip{
+        justify-content: center;
+        grid-template-columns: repeat(auto-fill,350px);
+    }
+    .clips {
+        max-width: 400px;
+    }
+}
+
+/* Small devices (phones) */
+@media screen and (min-width: 550px) and (max-width: 669px) {
+    body {
+        max-width: 100%;
+    }
+
+    header {
+        justify-content: flex-start;
+    }
+
+    .redes {
+        display: none;
+    }
+
+    .container-fluid {
+        justify-content: space-evenly;
+    }
+
+    .nosotros {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nosotros video {
+        width: 75vw;
+    }
+
+    .nosp {
+        width: 100%;
+        text-align: center;
+    }
+
+    .redes2 ul {
+        justify-content: center;
+    }
+    
+    .mclip{
+        justify-content: center;
+        grid-template-columns: repeat(auto-fill,400px);
+    }
+    .clips {
+        max-width: 350px;
+    }
+}
+
+/* Medium devices (tablets) */
+@media screen and (min-width: 669px) and (max-width: 992px){
+    body {
+        max-width: 100%;
+    }
+
+    .navicon {
+        font-size: 1.5vw;
+    }
+}
+
+/* Large devices (desktops) */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        max-width: 100%;
+    }
+
+    .navicon {
+        font-size: 1.5vw;
+    }
+
+    .carousel {
+        height: fit-content;
+    }
+}
+
+/* Extra large devices (large laptops and desktops) */
+@media screen and (min-width: 1200px) {
+    body {
+        max-width: 100%;
+    }
+
+    .navicon {
+        font-size: 1.5vw;
+    }
 }

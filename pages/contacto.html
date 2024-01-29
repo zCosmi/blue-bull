@@ -47,20 +47,30 @@
         </div>
     </header>
 
-    <main id="mcont">
+    <main>
         <h1 class="maintt">Contactate con nosotros llenando este formulario:</h1>
 
-        <form action="form.php" method="post">
-            <label for="nombre">Nombre y Apellido completos</label>
-            <input type="text" name="nombre" id="nombre" placeholder="Por ej: Mateo Delgado Costa"><br><br>
-            <label for="telefono">Número de teléfono</label>
-            <input type="text" name="telefono" id="telefono" placeholder="Por ej: 2954843923"><br><br>
-            <label for="email">Dirección de correo electrónico</label>
-            <input type="text" name="email" id="email" placeholder="Por ej:nombre@gmail.com">
+        <form class="contacto" action="form.php" method="post">
+            <div class="inputs">
+                <label for="nombre" style="margin-right: 10px;">Nombre y Apellido completos</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Por ej: Mateo Delgado Costa">
+            </div>
 
-            <p id="mss">Dejá acá tu mensaje:</p>
-            <textarea name="mensaje" id="mensaje" cols="50" rows="10"></textarea><br>
-            <button type="submit">Enviar Mensaje</button>
+            <div class="inputs">
+                <label for="telefono" style="margin-right: 10px;">Número de teléfono</label>
+                <input type="text" name="telefono" id="telefono" placeholder="Por ej: 2954843923">
+            </div>
+
+            <div class="inputs">
+                <label for="email" style="margin-right: 10px;">Dirección de correo electrónico</label>
+                <input type="text" name="email" id="email" placeholder="Por ej:nombre@gmail.com">
+            </div>
+
+            <div class="inputs">
+                <p>Dejá acá tu mensaje:</p>
+                <textarea name="mensaje" id="mensaje" style="margin-right: 10px;" cols="50" rows="5"></textarea>
+                <button type="submit">Enviar Mensaje</button>
+            </div>
         </form>
     </main>
 
@@ -68,8 +78,8 @@
 
     <div class="inicio"><a href="../index.html">Volver al inicio</a></div>
 
-    <footer class="container-fluid row">
-        <div class="redes2 col pt-3">
+    <footer class="container-fluid">
+        <div class="redes2 col">
             <ul>
                 <li class="my-1"><a href="../pages/productos.html">Nuestros productos</a></li>
                 <li class="my-1"><a href="../pages/fundacion.html">Fundación</a></li>
