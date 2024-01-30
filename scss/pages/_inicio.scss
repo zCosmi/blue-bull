@@ -1,0 +1,41 @@
+$font-family_1: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+.nosotros {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    padding: 20px;
+}
+
+.nosp {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    font-family: $font-family_1;
+}
+
+/*carrusel*/
+.carousel {
+    max-width: 70%;
+    max-height: 500px;
+}
+
+.car-tm {
+    max-height: 500px;
+
+    img {
+        width: 100%;
+    }
+}
+
+.carousel-caption {
+    height: fit-content;
+}
+
+/*mensaje flotante*/
+.toast-header {
+    img {
+        width: 30px;
+    }
+}

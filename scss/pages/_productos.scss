@@ -1,0 +1,31 @@
+.tipoprod {
+	text-align: left;
+}
+
+.prods {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+	justify-items: center;
+}
+
+.latas {
+	width: fit-content;
+	display: flex;
+	flex-flow: column-reverse wrap;
+	align-items: center;
+	margin-top: 20px;
+	border: 5px solid #0d1237;
+	border-radius: 30px;
+
+	img {
+		max-height: 300px;
+		border-radius: 30px;
+	}
+
+	h4 {
+		font-size: 0.9rem;
+		font-weight: 600;
+		text-align: center;
+		margin: 20px;
+	}
+}

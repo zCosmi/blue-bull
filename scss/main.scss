@@ -1,0 +1,19 @@
+//reset//
+@import "./reset/vars";
+@import "./reset/reset";
+
+//header y footer//
+@import "./header-footer";
+
+//paginas
+@import "./pages/inicio";
+@import "./pages/productos";
+@import "./pages/disciplinas";
+@import "./pages/atletas";
+@import "./pages/clips";
+@import "./pages/fundacion";
+@import "./pages/contacto";
+
+//media querys//
+@import "./media-query";
+

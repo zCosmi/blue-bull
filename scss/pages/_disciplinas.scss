@@ -1,0 +1,32 @@
+#ddesc {
+	font-family: $font-family_1;
+	font-weight: 500;
+	font-size: 1.1rem;
+	text-align: center;
+}
+
+.disciplinas {
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	font-family: $font-family_1;
+
+	h3 {
+		font-size: $large;
+		font-weight: 500;
+		text-align: start;
+	}
+
+	article {
+		margin-bottom: 20px;
+
+		p {
+			font-size: 1.2rem;
+			text-align: start;
+		}
+
+		iframe {
+			max-height: 450px;
+		}
+	}
+}

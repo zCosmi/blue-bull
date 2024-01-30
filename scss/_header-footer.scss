@@ -1,0 +1,120 @@
+$color_w: white;
+$color_2: #fff;
+$color_d: burlywood;
+$color_4: whitesmoke;
+$color_gc: lightgray;
+$background-color_1: #0E1338;
+
+/*header*/
+li {
+    a {
+        color: $color_w;
+        font-size: $default;
+    }
+}
+
+header {
+    background: url(../assets/background.png) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    height: fit-content;
+
+    img {
+        height: 110px;
+    }
+}
+
+.nopuntos {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+
+    ul {
+        display: flex;
+        flex-flow: row wrap;
+        list-style: none;
+    }
+}
+
+.navicon {
+    text-decoration: none;
+    color: $color_2;
+    padding: 7px 15px;
+    transition: all 0.3s ease-in-out;
+    font-size: $default;
+
+    &:hover {
+        color: $color_d;
+        font-weight: bold;
+    }
+}
+
+.redes {
+    text-align: end;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    ul {
+        flex-flow: column wrap;
+        align-items: end;
+        justify-content: center;
+    }
+
+    li {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        align-items: center;
+
+        a {
+            color: $color_4;
+            text-decoration: none;
+            font-size: 0.75rem;
+        }
+    }
+}
+
+.redes2 {
+    ul {
+        li {
+            list-style: none;
+            color: $color_4;
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            align-items: center;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        font-size: $default;
+        color: $color_4;
+    }
+}
+
+.imgred {
+    max-height: 30px;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+/*footer*/
+footer {
+    display: block;
+    background-color: $background-color_1;
+    color: $color_gc;
+    height: auto;
+    position: relative;
+    bottom: 0;
+    margin-top: 20px;
+}
+
+.container-fluid {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}

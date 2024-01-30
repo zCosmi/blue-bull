@@ -1,0 +1,12 @@
+.mfund {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    font-size: $default;
+    margin: auto;
+    font-family: $font-family_1;
+
+    p {
+        margin: 0px 40px;
+    }
+}
