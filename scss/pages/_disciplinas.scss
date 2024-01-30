@@ -1,15 +1,19 @@
 #ddesc {
 	font-family: $font-family_1;
 	font-weight: 500;
-	font-size: 1.1rem;
+	font-size: $default;
+	margin: 15px;
 	text-align: center;
 }
 
 .disciplinas {
-	display: flex;
-	justify-content: center;
-	flex-flow: row wrap;
-	font-family: $font-family_1;
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: start;
+		margin: 30px;
+		font-family: $font-family_1;
+		height: fit-content;
+		text-align: center;
 
 	h3 {
 		font-size: $large;
@@ -22,11 +26,27 @@
 
 		p {
 			font-size: 1.2rem;
-			text-align: start;
-		}
-
-		iframe {
-			max-height: 450px;
 		}
 	}
+}
+
+.dvid {
+	display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+	justify-content: center;
+	
+	iframe {
+		max-height: 450px;
+		max-width: 40%;
+	}
+
+	h3 {
+		text-align: center;
+	}
+}
+
+.txt-dis {
+	max-width: 50%;
+	margin: 20px 30px;
 }

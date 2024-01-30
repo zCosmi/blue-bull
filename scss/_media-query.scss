@@ -27,12 +27,44 @@
         text-align: center;
     }
 
-    .mclip{
+    .mclip {
         justify-content: center;
-        grid-template-columns: repeat(auto-fill,350px);
+        grid-template-columns: repeat(auto-fill, 350px);
     }
+
     .clips {
         max-width: 400px;
+    }
+
+    .redes2 {
+        ul {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            margin: auto;
+        }
+
+        a {
+            margin: 5px;
+        }
+    }
+
+    .dvid {
+        flex-direction: column;
+        align-items: center;
+        align-content: normal;
+
+        iframe {
+            max-width: 90%;
+        }
+    }
+
+    .txt-dis {
+        max-width: 90%;
+
+        p {
+            text-align: center;
+        }
     }
 }
 
@@ -57,9 +89,9 @@
     .nosotros {
         flex-direction: column;
         align-items: center;
-    
+
         video {
-        width: 75vw;
+            width: 75vw;
         }
     }
 
@@ -67,30 +99,75 @@
         width: 100%;
         text-align: center;
     }
-    
+
     .redes2 {
         ul {
-        justify-content: center;
+            justify-content: center;
+            padding-bottom: 15px;
         }
     }
-    
+
     .mclip {
         justify-content: center;
-        grid-template-columns: repeat(auto-fill,400px);
+        grid-template-columns: repeat(auto-fill, 400px);
     }
+
     .clips {
         max-width: 350px;
+    }
+
+    .dvid {
+        flex-direction: column;
+        align-items: center;
+        align-content: normal;
+
+        iframe {
+            max-width: 75%;
+        }
+    }
+
+    .txt-dis {
+        max-width: 75%;
+    }
+
+    .redes2 {
+        ul {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            margin: auto;
+            padding-bottom: 15px;
+        }
+
+        a {
+            margin: 5px;
+        }
     }
 }
 
 /*Medium devices (tablets)*/
-@media screen and (min-width: 669px) and (max-width: 992px){
+@media screen and (min-width: 669px) and (max-width: 992px) {
     body {
         max-width: 100%;
     }
 
     .navicon {
         font-size: 1.5vw;
+    }
+
+    .dvid {
+        flex-direction: column;
+        align-items: center;
+        align-content: normal;
+        text-align: center;
+
+        iframe {
+            max-width: 75%;
+        }
+    }
+
+    .txt-dis {
+        max-width: 75%;
     }
 }
 
@@ -107,6 +184,15 @@
     .carousel {
         height: fit-content;
     }
+
+    .disciplinas {
+        h3 {
+            text-align: start;
+        }
+    }
+    .dvid {
+            text-align: start;
+    }
 }
 
 /*Extra large devices (large laptops and desktops)*/
@@ -117,5 +203,11 @@
 
     .navicon {
         font-size: 1.5vw;
+    }
+    
+    .dvid {
+        h3 {
+            text-align: start;
+        }
     }
 }

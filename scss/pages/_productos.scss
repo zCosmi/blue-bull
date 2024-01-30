@@ -1,5 +1,6 @@
 .tipoprod {
 	text-align: left;
+	text-decoration: underline;
 }
 
 .prods {
@@ -8,13 +9,21 @@
 	justify-items: center;
 }
 
+#descprod {
+	display: flex;
+	justify-content: center;
+	font-family: $font-family_3;
+	font-size: 1.5rem;
+	text-decoration: #091044e4 wavy underline;
+}
+
 .latas {
 	width: fit-content;
 	display: flex;
 	flex-flow: column-reverse wrap;
 	align-items: center;
 	margin-top: 20px;
-	border: 5px solid #0d1237;
+	border: 5px solid #091044e4;
 	border-radius: 30px;
 
 	img {

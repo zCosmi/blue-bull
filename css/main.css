@@ -3,7 +3,7 @@
 /*tamaños fuentes*/
 /*tipografias*/
 html {
-  height: 100%;
+  min-height: 100%;
 }
 
 body {
@@ -14,14 +14,22 @@ body {
   display: flex;
   flex-flow: column wrap;
   max-width: 100%;
-  min-height: 100%;
+  min-height: fit-content;
   justify-content: space-between;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100vw;
+  background-color: #0e1338;
 }
 
 main {
   font-family: "Asap Condensed", sans-serif;
   font-size: 1rem;
   height: fit-content;
+  min-height: fit-content;
+  max-width: 100%;
 }
 
 .grid {
@@ -31,23 +39,19 @@ main {
 .maintt {
   font-family: "Cinzel", serif;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 600;
   color: burlywood;
-  margin: 25px;
-}
-
-.titt {
-  grid-row: 2;
-  grid-column: 2;
+  margin: 10px;
 }
 
 .mainst {
   font-family: "Cinzel", serif;
   text-align: center;
   font-size: 1.7rem;
-  margin: 25px 10px;
+  margin: 30px;
   font-weight: 600;
+  max-width: 90%;
 }
 
 .card {
@@ -183,11 +187,11 @@ footer {
   flex-wrap: wrap;
   align-content: flex-start;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: auto;
 }
 
 /*carrusel*/
 .carousel {
-  max-width: 70%;
   max-height: 500px;
 }
 
@@ -199,7 +203,8 @@ footer {
 }
 
 .carousel-caption {
-  height: fit-content;
+  max-height: 500px;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 /*mensaje flotante*/
@@ -209,6 +214,7 @@ footer {
 
 .tipoprod {
   text-align: left;
+  text-decoration: underline;
 }
 
 .prods {
@@ -217,13 +223,21 @@ footer {
   justify-items: center;
 }
 
+#descprod {
+  display: flex;
+  justify-content: center;
+  font-family: "Cinzel", serif;
+  font-size: 1.5rem;
+  text-decoration: rgba(9, 16, 68, 0.8941176471) wavy underline;
+}
+
 .latas {
   width: fit-content;
   display: flex;
   flex-flow: column-reverse wrap;
   align-items: center;
   margin-top: 20px;
-  border: 5px solid #0d1237;
+  border: 5px solid rgba(9, 16, 68, 0.8941176471);
   border-radius: 30px;
 }
 .latas img {
@@ -240,15 +254,19 @@ footer {
 #ddesc {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1rem;
+  margin: 15px;
   text-align: center;
 }
 
 .disciplinas {
   display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
+  justify-content: start;
+  margin: 30px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: fit-content;
+  text-align: center;
 }
 .disciplinas h3 {
   font-size: 2rem;
@@ -260,10 +278,25 @@ footer {
 }
 .disciplinas article p {
   font-size: 1.2rem;
-  text-align: start;
 }
-.disciplinas article iframe {
+
+.dvid {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  justify-content: center;
+}
+.dvid iframe {
   max-height: 450px;
+  max-width: 40%;
+}
+.dvid h3 {
+  text-align: center;
+}
+
+.txt-dis {
+  max-width: 50%;
+  margin: 20px 30px;
 }
 
 main h1 {
@@ -294,22 +327,24 @@ main h1 {
 
 .mclip {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 550px);
+  grid-template-columns: repeat(auto-fill, 650px);
   justify-content: center;
   grid-auto-rows: 400px;
   height: fit-content;
+  justify-items: center;
 }
 
 .clips {
   max-width: 500px;
   display: flex;
-  flex-flow: column wrap;
-  align-items: center;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: start;
 }
 .clips iframe {
   margin: 10px;
   width: 100%;
-  height: 300px;
+  max-height: 300px;
 }
 
 .mfund {
@@ -366,6 +401,29 @@ main h1 {
   .clips {
     max-width: 400px;
   }
+  .redes2 ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: auto;
+  }
+  .redes2 a {
+    margin: 5px;
+  }
+  .dvid {
+    flex-direction: column;
+    align-items: center;
+    align-content: normal;
+  }
+  .dvid iframe {
+    max-width: 90%;
+  }
+  .txt-dis {
+    max-width: 90%;
+  }
+  .txt-dis p {
+    text-align: center;
+  }
 }
 /*Small devices (phones)*/
 @media screen and (min-width: 550px) and (max-width: 669px) {
@@ -394,6 +452,7 @@ main h1 {
   }
   .redes2 ul {
     justify-content: center;
+    padding-bottom: 15px;
   }
   .mclip {
     justify-content: center;
@@ -401,6 +460,27 @@ main h1 {
   }
   .clips {
     max-width: 350px;
+  }
+  .dvid {
+    flex-direction: column;
+    align-items: center;
+    align-content: normal;
+  }
+  .dvid iframe {
+    max-width: 75%;
+  }
+  .txt-dis {
+    max-width: 75%;
+  }
+  .redes2 ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 15px;
+  }
+  .redes2 a {
+    margin: 5px;
   }
 }
 /*Medium devices (tablets)*/
@@ -410,6 +490,18 @@ main h1 {
   }
   .navicon {
     font-size: 1.5vw;
+  }
+  .dvid {
+    flex-direction: column;
+    align-items: center;
+    align-content: normal;
+    text-align: center;
+  }
+  .dvid iframe {
+    max-width: 75%;
+  }
+  .txt-dis {
+    max-width: 75%;
   }
 }
 /*Large devices (desktops)*/
@@ -423,6 +515,12 @@ main h1 {
   .carousel {
     height: fit-content;
   }
+  .disciplinas h3 {
+    text-align: start;
+  }
+  .dvid {
+    text-align: start;
+  }
 }
 /*Extra large devices (large laptops and desktops)*/
 @media screen and (min-width: 1200px) {
@@ -431,6 +529,9 @@ main h1 {
   }
   .navicon {
     font-size: 1.5vw;
+  }
+  .dvid h3 {
+    text-align: start;
   }
 }
 

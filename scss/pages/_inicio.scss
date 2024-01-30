@@ -13,11 +13,11 @@ $font-family_1: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     flex-wrap: wrap;
     align-content: flex-start;
     font-family: $font-family_1;
+    margin: auto;
 }
 
 /*carrusel*/
 .carousel {
-    max-width: 70%;
     max-height: 500px;
 }
 
@@ -30,7 +30,8 @@ $font-family_1: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .carousel-caption {
-    height: fit-content;
+    max-height: 500px;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 /*mensaje flotante*/
