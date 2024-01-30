@@ -93,18 +93,18 @@ header img {
 
 .nopuntos {
   display: flex;
-  justify-content: start;
   align-items: start;
 }
 .nopuntos ul {
   display: flex;
   flex-flow: row wrap;
   list-style: none;
+  justify-content: center;
 }
 
 .navicon {
   text-decoration: none;
-  color: #fff;
+  color: white;
   padding: 7px 15px;
   transition: all 0.3s ease-in-out;
   font-size: 1rem;
@@ -308,6 +308,7 @@ main h1 {
   flex-flow: row wrap;
   justify-content: space-around;
   width: 100%;
+  margin-top: 20px;
 }
 
 .atleta {
@@ -376,6 +377,9 @@ main h1 {
   body {
     max-width: 100%;
   }
+  main {
+    text-align: center;
+  }
   .redes {
     display: none;
   }
@@ -430,6 +434,9 @@ main h1 {
   body {
     max-width: 100%;
   }
+  main {
+    text-align: center;
+  }
   header {
     justify-content: flex-start;
   }
@@ -453,6 +460,9 @@ main h1 {
   .redes2 ul {
     justify-content: center;
     padding-bottom: 15px;
+  }
+  .redes2 ul li {
+    margin: 0px 20px;
   }
   .mclip {
     justify-content: center;
@@ -487,6 +497,9 @@ main h1 {
 @media screen and (min-width: 669px) and (max-width: 992px) {
   body {
     max-width: 100%;
+  }
+  main {
+    text-align: center;
   }
   .navicon {
     font-size: 1.5vw;

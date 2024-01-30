@@ -1,10 +1,3 @@
-$color_w: white;
-$color_2: #fff;
-$color_d: burlywood;
-$color_4: whitesmoke;
-$color_gc: lightgray;
-$background-color_1: #0E1338;
-
 /*header*/
 li {
     a {
@@ -28,19 +21,19 @@ header {
 
 .nopuntos {
     display: flex;
-    justify-content: start;
     align-items: start;
 
     ul {
         display: flex;
         flex-flow: row wrap;
         list-style: none;
+        justify-content: center;
     }
 }
 
 .navicon {
     text-decoration: none;
-    color: $color_2;
+    color: $color_w;
     padding: 7px 15px;
     transition: all 0.3s ease-in-out;
     font-size: $default;
@@ -70,7 +63,7 @@ header {
         align-items: center;
 
         a {
-            color: $color_4;
+            color: whitesmoke;
             text-decoration: none;
             font-size: 0.75rem;
         }
@@ -81,7 +74,7 @@ header {
     ul {
         li {
             list-style: none;
-            color: $color_4;
+            color: whitesmoke;
             display: flex;
             flex-direction: row;
             list-style: none;
@@ -92,7 +85,7 @@ header {
     a {
         text-decoration: none;
         font-size: $default;
-        color: $color_4;
+        color: whitesmoke;
     }
 }
 
@@ -105,7 +98,7 @@ header {
 /*footer*/
 footer {
     display: block;
-    background-color: $background-color_1;
+    background-color: #0E1338;
     color: $color_gc;
     height: auto;
     position: relative;

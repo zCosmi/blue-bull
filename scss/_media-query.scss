@@ -3,6 +3,9 @@
     body {
         max-width: 100%;
     }
+    main {
+        text-align: center;
+    }
 
     .redes {
         display: none;
@@ -73,6 +76,9 @@
     body {
         max-width: 100%;
     }
+    main {
+        text-align: center;
+    }
 
     header {
         justify-content: flex-start;
@@ -104,6 +110,10 @@
         ul {
             justify-content: center;
             padding-bottom: 15px;
+
+            li {
+                margin: 0px 20px;
+            }
         }
     }
 
@@ -149,6 +159,9 @@
 @media screen and (min-width: 669px) and (max-width: 992px) {
     body {
         max-width: 100%;
+    }
+    main {
+        text-align: center;
     }
 
     .navicon {

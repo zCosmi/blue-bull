@@ -1,5 +1,2 @@
 #ignorar liveserver
 .vscode
-
-#ignorar gitignore
-.gitignore
