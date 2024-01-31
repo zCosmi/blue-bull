@@ -4,13 +4,40 @@ $color_d: burlywood;
 $color_g: dimgray;
 $color_w: white;
 $color_gc: lightgray;
-$color_d: burlywood;
+
+
+@mixin colorh1 {
+    @each $name-color, $color in $colgroup {
+        &-#{$name-color} {
+            color: $color;
+        }
+    }
+}
 
 /*tamaños fuentes*/
 $default: 1rem;
 $large: 2rem;
+$xl: 3rem;
 
 /*tipografias*/
 $font-family_1: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 $font-family_2: 'Asap Condensed', sans-serif;
 $font-family_3: 'Cinzel', serif;
+
+@keyframes slide {
+    0% {
+        top: 1rem;
+    }
+
+    25% {
+        top: -7.5rem;
+    }
+
+    50% {
+        top: -15.5rem;
+    }
+
+    75% {
+        top: -24rem;
+    }
+}

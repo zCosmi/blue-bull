@@ -2,20 +2,31 @@
 /*colores tipografia*/
 /*tamaños fuentes*/
 /*tipografias*/
+@keyframes slide {
+  0% {
+    top: 1rem;
+  }
+  25% {
+    top: -7.5rem;
+  }
+  50% {
+    top: -15.5rem;
+  }
+  75% {
+    top: -24rem;
+  }
+}
 html {
   min-height: 100%;
 }
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: black;
   margin: 0px;
   padding: 0px;
   display: flex;
   flex-flow: column wrap;
   max-width: 100%;
-  min-height: fit-content;
-  justify-content: space-between;
   overflow-x: hidden;
 }
 
@@ -41,8 +52,8 @@ main {
   text-align: center;
   font-size: 2.5rem;
   font-weight: 600;
-  color: burlywood;
   margin: 10px;
+  color: burlywood;
 }
 
 .mainst {
@@ -172,6 +183,59 @@ footer {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
+}
+
+.roller {
+  height: 4.125rem;
+  line-height: 4.1rem;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#rolltxt {
+  position: absolute;
+  top: 1rem;
+  animation: slide 8s infinite;
+}
+
+.h1col {
+  font-family: "Cinzel", serif;
+  font-weight: bolder;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.en {
+  content: "";
+  background: linear-gradient(to right, rgb(14, 19, 57) 45%, rgb(255, 190, 79) 100%);
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.alm {
+  background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(214, 0, 0) 50%, rgb(247, 200, 0) 90%);
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.jpn {
+  background: linear-gradient(to right, rgba(255, 0, 3, 0.75) 40%, rgba(255, 255, 255, 0) 100%);
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.frn {
+  background: linear-gradient(to right, rgb(0, 34, 144) 0%, rgb(255, 255, 255) 50%, rgb(230, 40, 55) 100%);
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .nosotros {
@@ -367,9 +431,14 @@ main h1 {
   justify-content: center;
 }
 
-.inputs {
+.inputs input {
   margin-bottom: 20px;
   margin-right: 10px;
+}
+
+.inputs:focus input {
+  border-color: lightblue;
+  transform: scaleX(50px);
 }
 
 /*Extra small devices (phones)*/
