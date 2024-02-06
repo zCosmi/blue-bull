@@ -59,10 +59,16 @@ main {
 	position: relative;
 	margin: 20px;
 	right: 20px;
+	animation: slide-in 1s linear;
+	overflow: hidden;
 
 	a {
 		color: $color_g;
 		font-size: $default;
 		font-weight: 600;
+	}
+	a:hover {
+		color: #3b83ff;
+    	outline: none;
 	}
 }

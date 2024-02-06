@@ -3,17 +3,21 @@
     flex-flow: column wrap;
     margin: 20px;
     justify-content: center;
+
 }
 
 .inputs {
     input {
-    margin-bottom: 20px;
-    margin-right: 10px;
+        margin-bottom: 20px;
+        margin-right: 10px;
     }
 }
-.inputs:focus {
-    input {
-    border-color: lightblue;
-    transform: scaleX(50px);
-    }
+
+textarea:focus,input:focus {
+animation: all 4s;
+width: 15%;
+}
+
+button:hover {
+    animation: glow 2s;
 }

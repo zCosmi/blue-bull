@@ -41,3 +41,25 @@ $font-family_3: 'Cinzel', serif;
         top: -24rem;
     }
 }
+
+@keyframes slide-in {
+    0% {
+        right: -50px;
+    }
+
+    100% {
+        right: 20px;
+    }
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 1px black;
+        outline: none;
+    }
+    
+    100% {
+        box-shadow: 0 1px 1px #005eff8a, 0 0 6px #3b83ff;
+        outline: none;
+    }
+}

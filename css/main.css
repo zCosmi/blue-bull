@@ -16,6 +16,24 @@
     top: -24rem;
   }
 }
+@keyframes slide-in {
+  0% {
+    right: -50px;
+  }
+  100% {
+    right: 20px;
+  }
+}
+@keyframes glow {
+  0% {
+    box-shadow: 1px black;
+    outline: none;
+  }
+  100% {
+    box-shadow: 0 1px 1px rgba(0, 94, 255, 0.5411764706), 0 0 6px #3b83ff;
+    outline: none;
+  }
+}
 html {
   min-height: 100%;
 }
@@ -77,11 +95,17 @@ main {
   position: relative;
   margin: 20px;
   right: 20px;
+  animation: slide-in 1s linear;
+  overflow: hidden;
 }
 .inicio a {
   color: dimgray;
   font-size: 1rem;
   font-weight: 600;
+}
+.inicio a:hover {
+  color: #3b83ff;
+  outline: none;
 }
 
 /*header*/
@@ -130,6 +154,7 @@ header img {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  margin-right: 15px;
 }
 .redes ul {
   flex-flow: column wrap;
@@ -199,7 +224,7 @@ footer {
 #rolltxt {
   position: absolute;
   top: 1rem;
-  animation: slide 8s infinite;
+  animation: slide 10s infinite;
 }
 
 .h1col {
@@ -210,8 +235,7 @@ footer {
 }
 
 .en {
-  content: "";
-  background: linear-gradient(to right, rgb(14, 19, 57) 45%, rgb(255, 190, 79) 100%);
+  background: linear-gradient(to right, rgb(14, 24, 99) 30%, rgb(248, 227, 121) 100%);
   background-size: cover;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -232,7 +256,7 @@ footer {
 }
 
 .frn {
-  background: linear-gradient(to right, rgb(0, 34, 144) 0%, rgb(255, 255, 255) 50%, rgb(230, 40, 55) 100%);
+  background: linear-gradient(to right, rgb(0, 34, 144) 0%, rgb(211, 211, 211) 50%, rgb(230, 40, 55) 100%);
   background-size: cover;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -436,9 +460,13 @@ main h1 {
   margin-right: 10px;
 }
 
-.inputs:focus input {
-  border-color: lightblue;
-  transform: scaleX(50px);
+textarea:focus, input:focus {
+  animation: all 4s;
+  width: 15%;
+}
+
+button:hover {
+  animation: glow 2s;
 }
 
 /*Extra small devices (phones)*/

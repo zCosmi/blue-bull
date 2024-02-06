@@ -13,7 +13,7 @@
 #rolltxt {
     position: absolute;
     top: 1rem;
-    animation: slide 8s infinite;
+    animation: slide 10s infinite;
 }
 
 .h1col {
@@ -24,8 +24,7 @@
 }
 
 .en {
-    content: '';
-    background: linear-gradient(to right, rgba(14, 19, 57, 1) 45%, rgba(255, 190, 79, 1) 100%);
+    background: linear-gradient(to right, rgb(14, 24, 99) 30%, rgb(248, 227, 121) 100%);
     background-size: cover;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -43,7 +42,7 @@
     -webkit-text-fill-color: transparent;
 }
 .frn {
-    background: linear-gradient(to right, rgba(0, 34, 144, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(230, 40, 55, 1) 100%);
+    background: linear-gradient(to right, rgba(0, 34, 144, 1) 0%, rgb(211, 211, 211) 50%, rgba(230, 40, 55, 1) 100%);
     background-size: cover;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
