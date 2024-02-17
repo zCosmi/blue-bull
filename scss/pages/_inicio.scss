@@ -26,25 +26,25 @@
 .en {
     background: linear-gradient(to right, rgb(14, 24, 99) 30%, rgb(248, 227, 121) 100%);
     background-size: cover;
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .alm {
     background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(214, 0, 0, 1) 50%, rgba(247, 200, 0, 1) 90%);
     background-size: cover;
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .jpn {
     background: linear-gradient(to right, rgba(255, 0, 3, 0.75) 40%, rgba(255, 255, 255, 0) 100%);
     background-size: cover;
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .frn {
     background: linear-gradient(to right, rgba(0, 34, 144, 1) 0%, rgb(211, 211, 211) 50%, rgba(230, 40, 55, 1) 100%);
     background-size: cover;
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
