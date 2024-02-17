@@ -17,9 +17,9 @@ main {
 	flex-flow: column wrap;
 	align-items: center;
 	max-width: 350px;
+	height: fit-content;
 	border: solid 1px lightgray;
 	border-radius: 10px;
-	height: fit-content;
 	margin-bottom: 20px;
     
 	img {

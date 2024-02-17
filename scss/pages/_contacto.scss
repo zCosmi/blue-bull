@@ -2,8 +2,9 @@
     display: flex;
     flex-flow: column wrap;
     margin: 20px;
-    justify-content: center;
-
+    justify-content: start;
+    align-items: baseline;
+    align-content: flex-start;
 }
 
 .inputs {

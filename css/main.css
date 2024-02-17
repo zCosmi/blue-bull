@@ -42,10 +42,11 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0px;
   padding: 0px;
-  display: flex;
-  flex-flow: column wrap;
-  max-width: 100%;
   overflow-x: hidden;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
+  min-height: 100vh;
 }
 
 header {
@@ -115,7 +116,7 @@ li a {
 }
 
 header {
-  background: url(../assets/background.png) no-repeat;
+  background: url(../assets/background.jpeg) no-repeat;
   background-size: cover;
   display: flex;
   flex-flow: row wrap;
@@ -280,7 +281,8 @@ footer {
 
 /*carrusel*/
 .carousel {
-  max-height: 500px;
+  max-width: 80vw;
+  padding: 30px;
 }
 
 .car-tm {
@@ -291,7 +293,7 @@ footer {
 }
 
 .carousel-caption {
-  max-height: 500px;
+  max-height: 50%;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -307,8 +309,12 @@ footer {
 
 .prods {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  justify-content: space-around;
+  align-items: start;
   justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
 
 #descprod {
@@ -320,11 +326,12 @@ footer {
 }
 
 .latas {
-  width: fit-content;
+  width: 315px;
+  height: fit-content;
   display: flex;
   flex-flow: column-reverse wrap;
   align-items: center;
-  margin-top: 20px;
+  justify-content: start;
   border: 5px solid rgba(9, 16, 68, 0.8941176471);
   border-radius: 30px;
 }
@@ -333,10 +340,9 @@ footer {
   border-radius: 30px;
 }
 .latas h4 {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   font-weight: 600;
   text-align: center;
-  margin: 20px;
 }
 
 #ddesc {
@@ -404,9 +410,9 @@ main h1 {
   flex-flow: column wrap;
   align-items: center;
   max-width: 350px;
+  height: fit-content;
   border: solid 1px lightgray;
   border-radius: 10px;
-  height: fit-content;
   margin-bottom: 20px;
 }
 .atleta img {
@@ -443,6 +449,7 @@ main h1 {
   font-size: 1rem;
   margin: auto;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 80vw;
 }
 .mfund p {
   margin: 0px 40px;
@@ -452,7 +459,9 @@ main h1 {
   display: flex;
   flex-flow: column wrap;
   margin: 20px;
-  justify-content: center;
+  justify-content: start;
+  align-items: baseline;
+  align-content: flex-start;
 }
 
 .inputs input {

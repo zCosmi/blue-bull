@@ -1,3 +1,4 @@
+
 .tipoprod {
 	text-align: left;
 	text-decoration: underline;
@@ -5,8 +6,12 @@
 
 .prods {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
-	justify-items: center;
+	justify-content: space-around;
+    align-items: start;
+    justify-items: center; 
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 20px;
+	padding: 20px;
 }
 
 #descprod {
@@ -18,11 +23,12 @@
 }
 
 .latas {
-	width: fit-content;
+	width: 315px;
+	height: fit-content;
 	display: flex;
 	flex-flow: column-reverse wrap;
 	align-items: center;
-	margin-top: 20px;
+	justify-content: start;
 	border: 5px solid #091044e4;
 	border-radius: 30px;
 
@@ -32,9 +38,8 @@
 	}
 
 	h4 {
-		font-size: 0.9rem;
+		font-size: 1.2rem;
 		font-weight: 600;
 		text-align: center;
-		margin: 20px;
 	}
 }

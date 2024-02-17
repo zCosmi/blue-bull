@@ -6,10 +6,11 @@ body {
 	font-family: $font-family_1;
 	margin: 0px;
 	padding: 0px;
-	display: flex;
-	flex-flow: column wrap;
-	max-width: 100%;
 	overflow-x: hidden;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	grid-template-columns: 100%;
+	min-height: 100vh;
 }
 
 header {
